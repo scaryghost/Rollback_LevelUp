@@ -6,6 +6,10 @@ function array<class<Pickup> > getWeaponPickups() {
     return weapons;
 }
 
+function class<KFMonstersCollection> getMonstersCollection() {
+    return class'LUMonstersCollection';
+}
+
 defaultproperties {
     weapons(0)=Class'KFMod.MP7MPickup'
     weapons(1)=Class'KFMod.ShotgunPickup'
@@ -17,7 +21,7 @@ defaultproperties {
     weapons(7)=Class'KFMod.DeaglePickup'
     weapons(8)=Class'KFMod.DualDeaglePickup'
     weapons(9)=Class'KFMod.WinchesterPickup'
-    weapons(10)=Class'KFMod.CrossbowPickup'
+    weapons(10)=Class'Rollback_LevelUp.CrossbowPickup'
     weapons(11)=Class'Rollback_LevelUp.M14EBRPickup'
     weapons(12)=Class'KFMod.BullpupPickup'
     weapons(13)=Class'KFMod.AK47Pickup'

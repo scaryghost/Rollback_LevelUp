@@ -1,0 +1,38 @@
+class LUMonstersCollection extends KFMonstersCollection;
+
+defaultproperties {
+    MonsterClasses(0)=(MClassName="KFChar.ZombieClot",Mid="A")
+    MonsterClasses(1)=(MClassName="KFChar.ZombieCrawler",Mid="B")
+    MonsterClasses(2)=(MClassName="KFChar.ZombieGoreFast",Mid="C")
+    MonsterClasses(3)=(MClassName="KFChar.ZombieStalker",Mid="D")
+    MonsterClasses(4)=(MClassName="Rollback_LevelUp.ZombieScrake",Mid="E")
+    MonsterClasses(5)=(MClassName="Rollback_LevelUp.ZombieFleshpound",Mid="F")
+    MonsterClasses(6)=(MClassName="KFChar.ZombieBloat",Mid="G")
+    MonsterClasses(7)=(MClassName="KFChar.ZombieSiren",Mid="H")
+    MonsterClasses(8)=(MClassName="KFChar.ZombieHusk",Mid="I")
+    StandardMonsterClasses(0)=(MClassName="KFChar.ZombieClot",Mid="A")
+    StandardMonsterClasses(1)=(MClassName="KFChar.ZombieCrawler",Mid="B")
+    StandardMonsterClasses(2)=(MClassName="KFChar.ZombieGoreFast",Mid="C")
+    StandardMonsterClasses(3)=(MClassName="KFChar.ZombieStalker",Mid="D")
+    StandardMonsterClasses(4)=(MClassName="Rollback_LevelUp.ZombieScrake",Mid="E")
+    StandardMonsterClasses(5)=(MClassName="Rollback_LevelUp.ZombieFleshpound",Mid="F")
+    StandardMonsterClasses(6)=(MClassName="KFChar.ZombieBloat",Mid="G")
+    StandardMonsterClasses(7)=(MClassName="KFChar.ZombieSiren",Mid="H")
+    StandardMonsterClasses(8)=(MClassName="KFChar.ZombieHusk",Mid="I")
+    ShortSpecialSquads(2)=(ZedClass=("KFChar.ZombieCrawler","KFChar.ZombieGorefast","KFChar.ZombieStalker","Rollback_LevelUp.ZombieScrake"),NumZeds=(2,2,1,1))
+    ShortSpecialSquads(3)=(ZedClass=("KFChar.ZombieBloat","KFChar.ZombieSiren","Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1,2,1))
+    NormalSpecialSquads(3)=(ZedClass=("KFChar.ZombieCrawler","KFChar.ZombieGorefast","KFChar.ZombieStalker","Rollback_LevelUp.ZombieScrake"),NumZeds=(2,2,1,1))
+    NormalSpecialSquads(4)=(ZedClass=("Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1))
+    NormalSpecialSquads(5)=(ZedClass=("KFChar.ZombieBloat","KFChar.ZombieSiren","Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1,1,1))
+    NormalSpecialSquads(6)=(ZedClass=("KFChar.ZombieBloat","KFChar.ZombieSiren","Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1,1,2))
+    LongSpecialSquads(4)=(ZedClass=("KFChar.ZombieCrawler","KFChar.ZombieGorefast","KFChar.ZombieStalker","Rollback_LevelUp.ZombieScrake"),NumZeds=(2,2,1,1))
+    LongSpecialSquads(6)=(ZedClass=("Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1))
+    LongSpecialSquads(7)=(ZedClass=("KFChar.ZombieBloat","KFChar.ZombieSiren","Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1,1,1))
+    LongSpecialSquads(8)=(ZedClass=("KFChar.ZombieBloat","KFChar.ZombieSiren","Rollback_LevelUp.ZombieScrake","Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1,2,1,1))
+    LongSpecialSquads(9)=(ZedClass=("KFChar.ZombieBloat","KFChar.ZombieSiren","Rollback_LevelUp.ZombieScrake","Rollback_LevelUp.ZombieFleshPound"),NumZeds=(1,2,1,2))
+    FinalSquads(0)=(ZedClass=("KFChar.ZombieClot"),NumZeds=(4))
+    FinalSquads(1)=(ZedClass=("KFChar.ZombieClot","KFChar.ZombieCrawler"),NumZeds=(3,1))
+    FinalSquads(2)=(ZedClass=("KFChar.ZombieClot","KFChar.ZombieStalker","KFChar.ZombieCrawler"),NumZeds=(3,1,1))
+    FallbackMonsterClass="KFChar.ZombieStalker"
+    EndGameBossClass="KFChar.ZombieBoss"
+}
