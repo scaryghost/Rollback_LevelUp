@@ -42,7 +42,7 @@ defaultproperties {
     weapons(19)=Class'KFMod.KatanaPickup'
     weapons(20)=Class'KFMod.FlameThrowerPickup'
     weapons(21)=Class'KFMod.MAC10Pickup'
-    weapons(22)=Class'KFMod.PipeBombPickup'
+    weapons(22)=Class'Rollback_LevelUp.PipebombPickup'
     weapons(23)=Class'KFMod.M79Pickup'
-    weapons(24)=Class'KFMod.M32Pickup'
+    weapons(24)=Class'Rollback_LevelUp.M32Pickup'
 }
