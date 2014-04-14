@@ -10,6 +10,13 @@ function class<KFMonstersCollection> getMonstersCollection() {
     return class'LUMonstersCollection';
 }
 
+function string replaceActor(Actor other) {
+    if (SCARMK17AssaultRifle(Other) != none) {
+        SCARMK17AssaultRifle(Other).FireModeClass[0]= class'Rollback_LevelUp.SCARMK17Fire';
+    }
+    return "";
+}
+
 defaultproperties {
     weapons(0)=Class'KFMod.MP7MPickup'
     weapons(1)=Class'KFMod.ShotgunPickup'
