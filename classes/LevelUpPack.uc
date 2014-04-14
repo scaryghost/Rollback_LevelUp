@@ -13,6 +13,8 @@ function class<KFMonstersCollection> getMonstersCollection() {
 function string replaceActor(Actor other) {
     if (SCARMK17AssaultRifle(Other) != none) {
         SCARMK17AssaultRifle(Other).FireModeClass[0]= class'Rollback_LevelUp.SCARMK17Fire';
+    } else if (Winchester(Other) != none) {
+        Winchester(Other).FireModeClass[0]= class'Rollback_LevelUp.WinchesterFire';
     }
     return "";
 }
