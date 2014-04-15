@@ -19,7 +19,7 @@ static function int ReduceDamage(KFPlayerReplicationInfo KFPRI, KFPawn Injured, 
 }
 
 static function float GetCostScaling(KFPlayerReplicationInfo KFPRI, class<Pickup> Item) {
-    if (Item == class'KFRollback.ChainsawPickup' || Item == class'KFRollback.KatanaPickup') {
+    if (Item == class'Rollback_LevelUp.ChainsawPickup' || Item == class'Rollback_LevelUp.KatanaPickup') {
         return 0.9 - (0.10 * float(KFPRI.ClientVeteranSkillLevel));
     }
     return 1.0;
@@ -28,7 +28,7 @@ static function float GetCostScaling(KFPlayerReplicationInfo KFPRI, class<Pickup
 static function AddDefaultInventory(KFPlayerReplicationInfo KFPRI, Pawn P) {
     // If Level 5, give them Chainsaw
     if (KFPRI.ClientVeteranSkillLevel >= 5) {
-        KFHumanPawn(P).CreateInventoryVeterancy("KFRollback.Chainsaw", GetCostScaling(KFPRI, class'KFRollback.ChainsawPickup'));
+        KFHumanPawn(P).CreateInventoryVeterancy("Rollback_LevelUp.Chainsaw", GetCostScaling(KFPRI, class'Rollback_LevelUp.ChainsawPickup'));
     }
 }
 
