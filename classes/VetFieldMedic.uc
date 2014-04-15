@@ -1,6 +1,6 @@
 class VetFieldMedic extends KFVetFieldMedic;
 
-static function float GetMovementSpeedModifier(KFPlayerReplicationInfo KFPRI) {
+static function float GetMovementSpeedModifier(KFPlayerReplicationInfo KFPRI, KFGameReplicationInfo KFGRI) {
     if (KFPRI.ClientVeteranSkillLevel <= 1) {
         return 1.0;
     }
