@@ -5,8 +5,14 @@ struct Replacement {
     var class<Object> newClass;
 };
 
+var array<String> packages;
+var array<class<KFVeterancyTypes> > perks;
 var array<Replacement> firemodes, pickups;
 var array<class<Pickup> > weapons;
+
+function array<class<KFVeterancyTypes> > getPerks() {
+    return perks;
+}
 
 function array<class<Pickup> > getWeaponPickups() {
     return weapons;
@@ -25,7 +31,7 @@ function string replaceActor(Actor other) {
         weapon= Weapon(Other);
         for(i= 0; i < ArrayCount(weapon.FireModeClass); i++) {
             for(j= 0; j < firemodes.Length; j++) {
-                if (ClassIsChildOf(weapon.FireModeClass[i], firemodes[j].oldClass)) {
+                if (weapon.FireModeClass[i] == firemodes[j].oldClass) {
                     weapon.FireModeClass[i]= class<WeaponFire>(firemodes[j].newClass);
                 }
             }
@@ -41,7 +47,21 @@ function string replaceActor(Actor other) {
     return "";
 }
 
+function array<string> getPackages() {
+    return packages;
+}
+
 defaultproperties {
+    packages(0)="Rollback_LevelUp"
+
+    perks(0)=Class'Rollback_LevelUp.VetFieldMedic'
+    perks(1)=Class'KFMod.KFVetSupportSpec'
+    perks(2)=Class'Rollback_LevelUp.VetSharpshooter'
+    perks(3)=Class'KFMod.KFVetCommando'
+    perks(4)=Class'Rollback_LevelUp.VetBerserker'
+    perks(5)=Class'Rollback_LevelUp.VetFirebug'
+    perks(6)=Class'Rollback_LevelUp.VetDemolitions'
+
     firemodes(0)=(oldClass=class'KFMod.SCARMK17Fire',newClass=class'Rollback_LevelUp.SCARMK17Fire')
     firemodes(1)=(oldClass=class'KFMod.WinchesterFire',newClass=class'Rollback_LevelUp.WinchesterFire')
     firemodes(2)=(oldClass=class'KFMod.KnifeFire',newClass=class'Rollback_LevelUp.KnifeFire')
