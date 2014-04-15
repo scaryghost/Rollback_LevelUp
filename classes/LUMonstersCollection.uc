@@ -34,5 +34,5 @@ defaultproperties {
     FinalSquads(1)=(ZedClass=("KFChar.ZombieClot","KFChar.ZombieCrawler"),NumZeds=(3,1))
     FinalSquads(2)=(ZedClass=("KFChar.ZombieClot","KFChar.ZombieStalker","KFChar.ZombieCrawler"),NumZeds=(3,1,1))
     FallbackMonsterClass="KFChar.ZombieStalker"
-    EndGameBossClass="KFChar.ZombieBoss"
+    EndGameBossClass="Rollback_LevelUp.ZombieBoss"
 }
