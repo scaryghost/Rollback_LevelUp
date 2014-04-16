@@ -5,6 +5,7 @@ struct Replacement {
     var class<Object> newClass;
 };
 
+var array<RollbackPack.DualInfo> dualWeapons;
 var array<String> packages;
 var array<class<KFVeterancyTypes> > perks;
 var array<Replacement> firemodes, pickups;
@@ -16,6 +17,10 @@ function array<class<KFVeterancyTypes> > getPerks() {
 
 function array<class<Pickup> > getWeaponPickups() {
     return weapons;
+}
+
+function array<RollbackPack.DualInfo> getDualWeapons() {
+    return dualWeapons;
 }
 
 function class<KFMonstersCollection> getMonstersCollection() {
@@ -54,6 +59,9 @@ function array<string> getPackages() {
 defaultproperties {
     packages(0)="Rollback_LevelUp"
 
+    dualWeapons(0)=(dualWeapon=class'KFMod.Dualies',singleWeapon=class'KFMod.Single')
+    dualWeapons(1)=(dualWeapon=class'KFRollback.DualDeagle',singleWeapon=class'KFRollback.Deagle')
+
     perks(0)=Class'Rollback_LevelUp.VetFieldMedic'
     perks(1)=Class'KFMod.KFVetSupportSpec'
     perks(2)=Class'Rollback_LevelUp.VetSharpshooter'
@@ -84,8 +92,8 @@ defaultproperties {
     weapons(3)=Class'KFMod.AA12Pickup'
     weapons(4)=Class'KFMod.SinglePickup'
     weapons(5)=Class'KFMod.DualiesPickup'
-    weapons(6)=Class'KFMod.DeaglePickup'
-    weapons(7)=Class'KFMod.DualDeaglePickup'
+    weapons(6)=Class'KFRollback.DeaglePickup'
+    weapons(7)=Class'KFRollback.DualDeaglePickup'
     weapons(8)=Class'KFMod.WinchesterPickup'
     weapons(9)=Class'Rollback_LevelUp.CrossbowPickup'
     weapons(10)=Class'Rollback_LevelUp.M14EBRPickup'

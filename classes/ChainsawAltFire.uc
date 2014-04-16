@@ -54,7 +54,7 @@ defaultproperties {
      MeleeDamage=270
      DamagedelayMin=0.650000
      DamagedelayMax=0.650000
-     hitDamageClass=Class'KFMod.DamTypeChainsaw'
+     hitDamageClass=Class'Rollback_LevelUp.DamTypeChainsaw'
      HitEffectClass=Class'KFMod.ChainsawHitEffect'
      FireSoundRef="KF_ChainsawSnd.Chainsaw_RevLong_Start"
      WideDamageMinHitAngle=0.800000

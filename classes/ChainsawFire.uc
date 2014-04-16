@@ -332,7 +332,7 @@ defaultproperties
      AmbientFireSoundRef="KF_ChainsawSnd.Chainsaw_RevLong_Loop"
      maxAdditionalDamage=5
      MeleeDamage=14
-     hitDamageClass=Class'KFMod.DamTypeChainsaw'
+     hitDamageClass=Class'Rollback_LevelUp.DamTypeChainsaw'
      HitEffectClass=Class'KFMod.ChainsawHitEffect'
      NoAmmoSoundRef="KF_FlamethrowerSnd.FT_DryFire"
      MeleeHitSoundRefs(0)="KF_AxeSnd.Axe_HitFlesh"

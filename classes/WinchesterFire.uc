@@ -94,19 +94,12 @@ event ModeDoFire()
         Weapon.PutDown();
     }
 
-    if (Weapon.Owner != none && AllowFire())
-    {
-        if (FireRate > 0.25)
-        {
-            Weapon.Owner.Velocity.x *= 0.1;
-            Weapon.Owner.Velocity.y *= 0.1;
-        }
-        else
-        {
-            Weapon.Owner.Velocity.x *= 0.5;
-            Weapon.Owner.Velocity.y *= 0.5;
-        }
-    }
+	if (Weapon.Owner != none && AllowFire())
+	{
+		if (FireRate > 0.25)
+			Weapon.Owner.Velocity *= 0.1;
+		else Weapon.Owner.Velocity *= 0.5;
+	}
 
     // client
     if (Instigator.IsLocallyControlled())
