@@ -15,6 +15,10 @@ function array<class<KFVeterancyTypes> > getPerks() {
     return perks;
 }
 
+function int getMaxPerkLevel() {
+    return 6;
+}
+
 function array<class<Pickup> > getWeaponPickups() {
     return weapons;
 }
